@@ -40,7 +40,8 @@ import documentation from '../pages/documentation.astro'
             • Hereflow Optic Sensor: The addition of the HereFlow Optic Sensor enables precise optical flow measurements, allowing the drone to accurately estimate its velocity and position relative to the ground.
             This sensor enhances the drone's stability and performance, especially in environments with low GPS visibility or indoors.<br />
             • TFMini-S Altitude Sensor: Incorporating the TFMini-S altitude sensor provides reliable altitude measurements, enabling the drone to maintain a consistent and accurate altitude above ground level.
-            This sensor enhances the drone's ability to navigate varying terrain and terrain features with confidence.
+            This sensor enhances the drone's ability to navigate varying terrain and terrain features with confidence. <br/>
+			• Drone Flight: Previously, the drone was having multiple errors and refused to fly. Our team debugged and fixed the errors, along with the correct motor and propeller orientation, and got the drone to fly.
 		</p>
         <div class="photos-container">
             <Photos
@@ -70,6 +71,20 @@ import documentation from '../pages/documentation.astro'
 				body="Learn how to use our drone."
 			/>
 		</ul>
+		Current Issues:
+		<p class="instructions">
+            • The drone is not able to stabilize correctly. The cause of this could be one of three things: <br/>
+			- The motor rpm is different <br/>
+			- The drone is not correctly calibrating <br/>
+			- The uneven weight distribution is offsetting the stabilization <br/>
+		</p>
+		Next Steps:
+		<p class="instructions">
+            • The drone needs to be autonomous. To achieve this, I recommened doing the following steps: <br/>
+			- Fix the drone stabilization <br/>
+			- Add multiple camera sensors around the drone for obstacle avoidance <br/>
+			- The drone landing is rough, add a soft landing material to cushion the landing of the drone <br/>
+		</p>
 	</main>
 	<footer class="footer">
 		<span class="bigger">Contact Us<br /></span>
